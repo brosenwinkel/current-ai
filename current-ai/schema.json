@@ -1,0 +1,25 @@
+{
+    "tables": {
+      "fact_impression_log": [
+        "line_item_id",
+        "company_id",
+        "time_period_start_date",
+        "impression_serve_cnt",
+        "click_cnt",
+        "spend_amt"
+      ],
+      "fact_conversion_log": [
+        "assoc_line_item_id",
+        "company_id",
+        "time_period_start_date",
+        "conversion_cnt",
+        "conversion_amt"
+      ],
+      "dim_line_item": [
+        "line_item_id",
+        "company_id",
+        "line_item_name"
+      ]
+    }
+  }
+  
