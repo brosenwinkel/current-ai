@@ -19,7 +19,7 @@ export function activate(context: vscode.ExtensionContext) {
   console.log("✅ Current extension is activated!");
 
 
-  vscode.window.showInformationMessage("⚡ Current is running!");
+  vscode.window.showInformationMessage("⚡ AOPS Current is running!");
 
   const provider = vscode.languages.registerInlineCompletionItemProvider(
     { scheme: 'file', language: '*' },
@@ -40,7 +40,7 @@ export function activate(context: vscode.ExtensionContext) {
         
         statusBarItem.text = '✨ Suggestion from Current';
         setTimeout(() => {
-          statusBarItem.text = '⚡ Current AI';
+          statusBarItem.text = '⚡ AOPS Current AI';
         }, 3000); // Reset after 3 seconds
 
         const line = document.lineAt(position.line);
@@ -58,7 +58,7 @@ export function activate(context: vscode.ExtensionContext) {
   );
 
   statusBarItem = vscode.window.createStatusBarItem(vscode.StatusBarAlignment.Right, 100);
-  statusBarItem.text = '⚡ Current AI';
+  statusBarItem.text = '⚡ AOPS Current AI';
   statusBarItem.tooltip = 'Current is active and ready';
   statusBarItem.show();
 
